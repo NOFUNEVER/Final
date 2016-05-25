@@ -1,0 +1,48 @@
+-Rocket Instructions-
+
+private data members
+                name, string
+                fuel, unsigned int
+
+        public function interface
+                default constructor (initial values "RS NullPointer", 1000)
+                setName,getName
+                setFuel,getFuel
+                
+
+
+
+  
+  
+  Your SATURN KEY: 1064
+  
+  
+  
+  -- START RocketShip update specification --
+
+        new private data members
+                vector<unsigned int> fuelCells
+
+        new public function interface
+                void addFuelCell(unsigned int fuelAmount)
+                bool removeFuelCell(unsigned int cellNumber)
+
+                bool addFuelToCell(unsigned int cellNumber, unsigned int fuelAmount)
+
+                string burnFuel(unsigned int cellNumber)
+
+-- END RocketShip update specification --
+
+Your JUPITER KEY: 87919629
+
+-- START RocketShip update specification --
+
+        new public function interface
+                overloaded constructor (string newName, unsigned int newFuel)
+
+        convert private access modifier to protected
+        -- Ask yourself, why would you need to do this? --
+
+-- END RocketShip update specification --
+
+PRESS ENTER TO CONTINUE
