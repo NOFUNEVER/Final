@@ -32,7 +32,7 @@ class RocketShip{
   protected:
     string name;
     unsigned int fuel;
-    bool cloaked;
+   
     vector<unsigned int> fuelCells;
 };
 
@@ -42,7 +42,20 @@ class RocketShip{
   
   
   
-}
+ class SpecialRocketShip : public RocketShip{
+   
+   public:
+    SpecialRocketShip();
+    void setCloaked(bool cloaked_);
+    bool getCloaked() const;
+   
+    private:
+   
+     bool cloaked;
+   
+   
+   
+ };
 
 
 #endif /* Rock_H */

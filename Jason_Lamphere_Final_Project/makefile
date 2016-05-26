@@ -1,5 +1,5 @@
 test: jupiter.o Rocket.o CinReader.o;
-	g++ -Wall -g -o test jupiter.o CinReader.o Rocket.o; 
+	g++ -Wall -g -o test mars.o CinReader.o Rocket.o; 
 	
 	
 rocket: Rocket.cpp;

@@ -8,7 +8,7 @@ using namespace std;
   RocketShip::RocketShip() : fuel(1000), name("RS NullPointer"){}
   RocketShip::RocketShip(string newName, unsigned int newFuel){
     name = newName;
-    feul = newFuel;
+    fuel = newFuel;
   }
 
   void RocketShip::setFuel(unsigned int input){
@@ -100,3 +100,20 @@ else
     
   }
 
+
+
+
+ SpecialRocketShip::SpecialRocketShip() : RocketShip("RS Cloaky", 1000), cloaked(false) {}
+
+    void SpecialRocketShip::setCloaked(bool cloaked_){
+      
+      cloaked=cloaked_;
+      
+    }
+    bool SpecialRocketShip::getCloaked() const {
+      
+      return cloaked;
+      
+      
+    }
+   
